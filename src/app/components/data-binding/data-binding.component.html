@@ -1,0 +1,54 @@
+<div class="row">
+    <div class = "col-4">
+        On Way - from .ts to .html
+    </div>
+    <div class = "col-4">
+        
+    </div>
+    <div class = "col-4">
+
+    </div>
+</div>
+
+<div class="row">
+    <div class = "col-4">
+        <div class="row">
+            <div class="col-4 bg-success">
+                interpolation
+                <h4>{{courseName}}</h4>
+                <div>{{inputType}}</div>
+                <input type="text" value="{{courseName}}" placeholder="Enter Text"/>
+                <input type="{{inputType}}"/>
+            </div>
+            <div class = "col-4">
+                Property binding
+                <div [class]="myClassName">Danger</div>
+                <input type="text" [value]="courseName"/>
+                <input [type]="inputType"/>        
+            </div>
+        </div>
+    </div>
+    <div class = "col-4">
+        <button class="btn btn-success" (click)="showAlert('Welcome to Angular18')">Show Welcome</button>
+        <span (click)="showAlert('this is the span')">Click Me</span>
+        <button class="btn btn-success" (click)="changeCourseName()">Change Couse</button>  
+    </div>
+    <div class = "col-6">
+        <input type="text" [(ngModel)]="courseName"/> - {{courseName}}
+
+        <input type="text" [(ngModel)]="courseName"/>
+
+        <select [(ngModel)] = "stateName">
+            <option value="">select</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Delhi">Delhi</option>
+            <option value="UtarPradesh">UtarPradesh</option>
+            <option value="Punjab">Punjab</option>
+        </select>
+        <div class="col-6">
+            <h2> {{firstName()}}</h2>
+        </div>
+
+       
+    </div>
+</div>
