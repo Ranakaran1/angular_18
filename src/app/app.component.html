@@ -1,2 +1,30 @@
-<h1>Hello</h1>
-<app-structural-directives></app-structural-directives>
+<!-- <h1>Hello</h1> -->
+<!-- <app-attribute-directive></app-attribute-directive> -->
+
+<div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="javascript:void(0);">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav" style="visibility: visible;">
+      <li class="active"><a routerLink="structural-dir">Structural Directive</a></li>
+      <li><a routerLink="attributedirective">Attribute Directive</a></li>
+      <li><a routerLink="emp-list">Employee List</a></li>
+      <li><a routerLink="add-emp">Add Employee</a></li>
+      <li><a routerLink="if-else">IF-ELSE</a></li>
+    </ul>
+    <form class="navbar-form navbar-left">
+      <div class="input-group" style="z-index:1">
+        <input type="text" class="form-control" placeholder="Search" jf-ext-cache-id="6" fdprocessedid="xytak9" spellcheck="false" data-ms-editor="true">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="button" fdprocessedid="y4rj2">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>    
+
