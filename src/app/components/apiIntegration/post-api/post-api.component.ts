@@ -2,9 +2,9 @@ import { JsonPipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { AlertComponent } from '../../../reusableComponent/alert/alert.component';
+import { MyButtonComponent } from '../../../reusableComponent/my-button/my-button.component';
 // import { DepartmentService } from '../../../service/department.service';
-// import { AlertComponent } from '../../../resuableComponent/alert/alert.component';
-// import { MyButtonComponent } from '../../../resuableComponent/my-button/my-button.component';
 // import { Department, IDepartmentList } from '../../../model/class/Customer';
 
 @Component({
